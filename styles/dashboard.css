@@ -156,7 +156,7 @@ nav {
     color: #ee6d18;
 }
 
-.div_level div:nth-child(1) p:nth-child(2) {
+.div_level div:nth-child(1) span {
     color: #1f954d;
 }
 
@@ -174,7 +174,7 @@ nav {
     color:  #ee6d18;
 }
 
-.div_level div:nth-child(2) p:nth-child(2) {
+.div_level div:nth-child(2) span {
     color: #1f954d;
 }
 
@@ -245,4 +245,19 @@ nav {
 .card_bas {
     color: #fff;
     font-size: 13px;
+ }
+ .voir-challenge{
+    /* display: flex; */
+    flex-direction: column;
+    border: 2px solid green;
+    border-radius: 10px;
+    background: #fff;
+    justify-content: center;
+    text-align: center;
+    width: 40rem;
+    display: none;
+ }
+ .voir-challenge .titre-challenge{
+   background-color: #1f954d;
+   width: fit-content;
  }

@@ -191,3 +191,16 @@ nav ul li{
     align-items: center;
     font-weight: 700;
    }
+   /* =============== correction ============= */
+   .table{
+    /* border: 2px solid black; */
+    width: 80%;
+   }
+   .table th, .table td {
+    border: 1px solid black;
+    text-align: center;
+   }
+   .table img{
+    width: 50px;
+    height: 50px;
+   }
