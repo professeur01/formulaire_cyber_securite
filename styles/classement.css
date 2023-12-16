@@ -114,33 +114,6 @@ nav ul li{
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
-.level_div{
-    position: absolute;
-    top: 12.6rem;
-    width: 39.3%;
-    height: 1.7rem;
-    display: flex;
-    justify-content: flex-end;
-}
-.level_div div{
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    color: #ee6d18;
-    font-weight: 700;
-}
-.level_div div:nth-child(1){
-   width: 13%;
-   height: 100%;
-}
-.level_div div:nth-child(2){
-    width: 11.2%;
-    height: 100%;
- }
- .level_div div:nth-child(3){
-    width: 29%;
-    height: 100%;
- }
 .div_classe img{ 
    width: 2.4rem; 
    background-color: #1fb341;
@@ -194,7 +167,8 @@ nav ul li{
    /* =============== correction ============= */
    .table{
     /* border: 2px solid black; */
-    width: 80%;
+    width: 85%;
+    height: 60%;
    }
    .table th, .table td {
     border: 1px solid black;
@@ -204,3 +178,40 @@ nav ul li{
     width: 50px;
     height: 50px;
    }
+   table, th, td {
+    border-collapse: collapse;
+  }
+  thead th {
+    height: 3rem;
+    color: #ee6d18;
+    letter-spacing: 1px;
+  }
+  .table thead th{
+    border: none;
+   
+    }
+  .table tbody td{
+  border: none;
+
+  }
+  .table tbody tr{
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    }
+    .table tbody tr .niv{
+       border-right: 2px solid #fff;
+        }
+    .niv{
+        background-color: #1f954d;
+        color: #fff;
+        font-size: 19px;
+    }
+    .poi{
+        background-color: #1f954d;
+        color: #fff;
+        font-size: 19px;
+    }
+    .ran{
+        color: #ee6d18;
+       
+    }

@@ -109,7 +109,7 @@ nav {
 }
 
 .div_timer {
-    width: 7%;
+    width: 10rem;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -246,18 +246,109 @@ nav {
     color: #fff;
     font-size: 13px;
  }
+/*  ------------Affichage Exercise-------------- */
+ .blur_body{
+    position: fixed;
+    top: 0;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+ }
  .voir-challenge{
-    /* display: flex; */
     flex-direction: column;
     border: 2px solid green;
     border-radius: 10px;
-    background: #fff;
+    background: #f1f1f1;
     justify-content: center;
     text-align: center;
-    width: 40rem;
-    display: none;
+    width: 70rem;
+    height: 40rem;
+    display: block;
  }
  .voir-challenge .titre-challenge{
-   background-color: #1f954d;
-   width: fit-content;
+   width: 100%;
+   height: 10%;
+   display: flex;
+   justify-content: space-between;
+   padding-right: 20px;
+   align-items: center;
  }
+.titre-bg{
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f954d;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    letter-spacing: 1px;
+}
+.contenue-challenge{
+    display: flex;
+    justify-content: center;
+   text-align: center;
+    width: 100%;
+    height: 50%;
+}
+.contenue-challenge p{
+    width: 95%;
+    letter-spacing: 1px;
+}
+.soumettre-challenge{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.challenge-left input{
+border: 2px solid #ff6f00;
+border-radius: 2px;
+width: 14rem;
+height: 2rem;
+padding: 5px;
+margin-right: 10px;
+outline: none;
+}
+.challenge-left button{
+    border: none;
+    border-radius: 5px;
+    width: 9.5rem;
+    height: 2rem;
+    padding: 5px;
+    margin-right: 10px;
+    outline: none;
+    background-color: green;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase ;
+    cursor: pointer;
+    }
+.challenge-right a i{
+color: green;
+font-size: 40px;
+}
+.titre-challenge i{
+    font-size: 25px;
+    color: #ff6f00;
+    cursor: pointer;
+}
+.div_fermer{
+    width: 40%;
+    display: flex;
+    justify-content: end;
+}
+.div_exo{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}

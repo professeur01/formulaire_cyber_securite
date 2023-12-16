@@ -11,8 +11,8 @@ users.forEach((element,index) => {
     <tr>
     <td><img src="../images/Mobile login-bro.png" alt="" /></td>
  <td colspan="4">${element.name}</td>
- <td colspan="">${element.level}</td>
- <td colspan="">${element.point}</td>
- <td colspan="4">#${index + 1}</td>
+ <td class="niv" colspan="">${element.level}</td>
+ <td class="poi" colspan="">${element.point}</td>
+ <td class="ran" colspan="4">#${index + 1}</td>
   </tr>` 
 });

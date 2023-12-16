@@ -10,7 +10,8 @@ let validerKey = document.querySelector('#valider');
 let challengeKey = document.querySelector('.challenge-key');
 let question = JSON.parse(localStorage.getItem('questions'));
 let reponses = JSON.parse(localStorage.getItem('reponses'));
-
+const fermerExo = document.querySelector(".titre-challenge i");
+const blurBody = document.querySelector(".blur_body");
 
 let reponseQuestion = "";
 let questionIndex= -1
@@ -65,11 +66,16 @@ cards.forEach(function (card, index) {
     card.addEventListener('click', function () {
        console.log('card cliquer : ',index);
        questionIndex = index;
-       challenges.style.display='block';
+       blurBody.style.display='flex';
        questions.innerHTML = `<p>${question[index].question}</p>`
         numEcercice.textContent = question[index].id;
     });
 });
+
+console.log(fermerExo);
+fermerExo.addEventListener('click', ()=> {
+    blurBody.style.display = "none"
+})
 // =============== voir challenge ============
 // =============== soumettre challenge ============
 valider.addEventListener('click', function () {
